@@ -1,0 +1,28 @@
+using System;
+class Program
+{
+    public static double Media(int[] numeros)
+    {
+        int soma = 0;
+        for (int i = 0; i < numeros.Length; i++)
+            soma += numeros[i];
+
+        return (double)soma / numeros.Length;
+    }
+
+    static void Main()
+    {
+        Console.Write("Digite a quantidade de números: ");
+        int n = int.Parse(Console.ReadLine());
+
+        int[] numeros = new int[n];
+
+        Console.WriteLine("Digite os números: ");
+        for (int i = 0; i < n; i++)
+        {
+            numeros[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine($"A média é: {Media(numeros)}");
+    }
+}

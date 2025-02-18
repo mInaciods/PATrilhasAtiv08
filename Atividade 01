@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    public static int quadrado(int numero)
+    {
+        return numero * numero;
+    }
+
+    static void Main()
+    {
+        int resultado = quadrado(5);
+        Console.WriteLine(resultado);
+    }
+}

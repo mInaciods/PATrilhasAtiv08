@@ -1,0 +1,20 @@
+using System;
+class Program
+{
+    public static string Concat(string x, string y)
+    {
+        string concatenar = x + y;
+        return concatenar;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Digite duas palavras:  ");
+        string x = Console.ReadLine();
+        string y = Console.ReadLine();
+
+        string resultado = Concat(x, y);
+
+        Console.WriteLine(resultado);
+    }
+}

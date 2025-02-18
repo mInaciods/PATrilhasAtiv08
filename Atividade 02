@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    public static int contador(string palavra)
+    {
+        return palavra.Length;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Digite uma palavra: ");
+        string palavra = Console.ReadLine();
+        int teste = contador(palavra);
+        Console.WriteLine($"O tamanho da palavra é: {teste}");
+    }
+}
